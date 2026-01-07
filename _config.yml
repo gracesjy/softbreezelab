@@ -16,10 +16,10 @@ timezone:
 
 title: Soft Breeze Lab # the main title
 
-tagline: A text-focused Jekyll theme # it will display as the subtitle
+tagline: Simplifying daily living through inspired knowledge and practical tools. # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
+  Soft Breeze Lab is a space dedicated to creating a more convenient and fulfilling everyday life. We provide practical knowledge and useful software that anyone can easily access and apply.
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
@@ -99,7 +99,7 @@ theme_mode: # [light | dark]
 cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar:
+avatar: /assets/images/MyImage.jpg
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
