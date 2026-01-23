@@ -74,4 +74,4 @@ PID control requires constant decimal (floating-point) calculations. While the 8
 ## μVision, ARM Keil (MDK_ARM) needed for development ...
 ***μVision*** is an Integrated Development Environment (IDE) created by Arm Keil. It is widely used for programming and debugging microcontrollers, especially those based on ARM Cortex-M processors. μVision provides everything developers need in one place: a code editor, compiler, project manager, and powerful debugging tools. With its simulation and hardware debugging support, it helps engineers design, test, and optimize embedded systems efficiently.
 
-![μVision](/assets/images/subfolder01/keil.png "One of STM32 IDEs")
+![μVision](/assets/images/subfolder01/keil.png "One of STM32 IDEs"){: width="650" height="auto"}
