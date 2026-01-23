@@ -14,7 +14,7 @@ layout: post
 I developed an app designed for **Bluetooth-based cars, balancing robots, and other devices**.  
 The app allows users to configure control packets for **forward, backward, left, right, and stop** commands.
 
-![Universal BT Joystick](/assets/images/subfolder01/UniveralBTJoystickLogo.png "General Purpose UBJ !")
+![Universal BT Joystick](/assets/images/subfolder01/UniversalBTJoystickLogo.png "General Purpose UBJ !")
 
 ### Purpose
 The main goal of this app is to make it simple to:
