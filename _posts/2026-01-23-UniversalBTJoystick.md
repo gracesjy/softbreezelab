@@ -14,7 +14,7 @@ layout: post
 I developed an app designed for **Bluetooth-based cars, balancing robots, and other devices**.  
 The app allows users to configure control packets for **forward, backward, left, right, and stop** commands.
 
-![Universal BT Joystick](/assets/images/subfolder01/UniversalBTJoystickLogo.png "General Purpose UBJ !"){: width="650" height="auto"}
+![Universal BT Joystick](/assets/images/subfolder01/UniversalBTJoystickLogo.png "General Purpose UBJ !"){: width="450" height="auto"}
 
 ### Purpose
 The main goal of this app is to make it simple to:
@@ -29,11 +29,11 @@ The main goal of this app is to make it simple to:
 - Joystick-based control for a user-friendly experience
 
 ### Snapshots
-- Main
-![Main](/assets/images/subfolder01/MainUniversalBTJoystick.jpg "Control for fun !"){: width="650" height="auto"}
-![AddProfile](/assets/images/subfolder01/AddProfile.jpg "For Your Protocol"){: width="650" height="auto"}
-![SelectProfile](/assets/images/subfolder01/SelectProfile.jpg "Change Protocol for Other Device"){: width="650" height="auto"}
-![Connect](/assets/images/subfolder01/ConnectBT.jpg "Connect device for already paired Device"){: width="650" height="auto"}
+
+![Main](/assets/images/subfolder01/MainUniversalBTJoystick.jpg "Control for fun !"){: width="450" height="auto"}
+![AddProfile](/assets/images/subfolder01/AddProfile.jpg "For Your Protocol"){: width="450" height="auto"}
+![SelectProfile](/assets/images/subfolder01/SelectProfile.jpg "Change Protocol for Other Device"){: width="450" height="auto"}
+![Connect](/assets/images/subfolder01/ConnectBT.jpg "Connect device for already paired Device"){: width="450" height="auto"}
 
 ### Download
 [Android App Download](/Release/app-universalbtjoystick.apk)
