@@ -2,7 +2,7 @@
 title: Universal Bluetooth Joystick for Simple Toys
 author: Raymond
 date: 2026-01-24
-category: Prototypes
+category: My Solutions
 tags:
  - Bluetooth
  - Android
