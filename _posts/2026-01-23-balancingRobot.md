@@ -74,4 +74,11 @@ PID control requires constant decimal (floating-point) calculations. While the 8
 ## μVision, ARM Keil (MDK_ARM) needed for development ...
 ***μVision*** is an Integrated Development Environment (IDE) created by Arm Keil. It is widely used for programming and debugging microcontrollers, especially those based on ARM Cortex-M processors. μVision provides everything developers need in one place: a code editor, compiler, project manager, and powerful debugging tools. With its simulation and hardware debugging support, it helps engineers design, test, and optimize embedded systems efficiently.
 
-![μVision](/assets/images/subfolder01/keil.png "One of STM32 IDEs"){: width="650" height="auto"}
+![μVision](/assets/images/subfolder01/keil.png "One of STM32 IDEs"){: width="450" height="auto"}
+
+## Keil μVision Community License
+To develop under a Community License, you must configure your project to run on the AC6 compiler. This is because AC5 is a very expensive license, and temporary licenses only last for one month.
+
+I contacted the manufacturer of the balancing robot board because they provided an AC5-based version, but they responded via email that they had no plans to port it to AC6 or an open-source IDE. This left me with several days to work with AI to resolve the issue. Fortunately, a solution was found.
+
+At License Management Menu, Select Tab 'User-Based License', Click 'Activate/Deactivate ..' Button, Select License Server and type https://mdk-preview.keil.arm.com, and then push the 'Query' Button, That's all. 
