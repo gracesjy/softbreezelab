@@ -32,6 +32,26 @@ The main goal of this app is to make it simple to:
 
 ![Main](/assets/images/subfolder01/MainUniversalBTJoystick.jpg "Control for fun !"){: width="450" height="auto"}
 ![AddProfile](/assets/images/subfolder01/AddProfile.jpg "For Your Protocol"){: width="450" height="auto"}
+
+This way, the profile is automatically set.
+The key feature is that if you know the protocol, you can define your own profile for forward, backward, left, right, and stop. You can also view logs.
+On Android, you can write the profile in JSON string format, copy it, and paste it into the app. The commands for forward/backward/left/right/stop will then be automatically entered.
+This function was created because the control strings for the balancing robot were too long and difficult to type manually. It also helps prevent typos
+
+```
+{
+  "back": "$2,0,0,0,0,0,0,0,0,0#",
+  "forward": "$1,0,0,0,0,0,0,0,0,0#",
+  "left": "$4,0,0,0,0,0,0,0,0,0#",
+  "name": "BalancingRobot",
+  "right": "$3,0,0,0,0,0,0,0,0,0#",
+  "stop": "$0,0,0,0,0,0,0,0,0,0#"
+}
+
+```
+
+
+
 ![SelectProfile](/assets/images/subfolder01/SelectProfile.jpg "Change Protocol for Other Device"){: width="450" height="auto"}
 ![Connect](/assets/images/subfolder01/ConnectBT.jpg "Connect device for already paired Device"){: width="450" height="auto"}
 
