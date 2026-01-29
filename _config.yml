@@ -27,19 +27,19 @@ url: "https://www.softbreezelab.com"
 baseurl: ""
 
 author:
-  name: Soft Breeze Lab # change to your full name
+  name: Raymond # change to your full name
   url: "https://www.softbreezelab.com" # change to your homepage URL
   
 github:
-  username: github_username # change to your GitHub username
+  username: Raymond # change to your GitHub username
 
 twitter:
-  username: twitter_username # change to your Twitter username
+  username: Raymond # change to your Twitter username
 
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: Soft Breeze Lab
+  name: Raymond
   email: gracesjy@naver.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
