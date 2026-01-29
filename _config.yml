@@ -26,6 +26,10 @@ description: >- # used by seo meta and the atom feed
 url: "https://www.softbreezelab.com"
 baseurl: ""
 
+author:
+  name: Soft Breeze Lab # change to your full name
+  url: "https://www.softbreezelab.com" # change to your homepage URL
+  
 github:
   username: github_username # change to your GitHub username
 
