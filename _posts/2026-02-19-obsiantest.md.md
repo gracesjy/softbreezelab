@@ -10,8 +10,13 @@ tags: [Obsidian, Github, Tistory]
 
 ## 2. 이미지 테스트
 아래에 이미지를 붙여넣어 보세요. (캡처 후 Ctrl+V)
-![첫번째 이미지](../assets/images/vscodeimages/img_2026-02-19-165830.png)
-![두번째 이미지](../assets/images/vscodeimages/img_2026-02-19-165908.png)
+![첫번째 이미지](../assets/images/vscodeimages/img_2026-02-19-165830.png) 첫번째 이미지 ??
+
+다음은 ?
+
+![두번째 이미지](../assets/images/vscodeimages/img_2026-02-19-165908.png) 두번째 이미지 ??
+
+
 
 
 > **확인 사항:** 이미지를 붙여넣었을 때 `![[image.png]]`가 아니라 `https://raw.githubusercontent.com/...` 링크가 생성되어야 합니다.
