@@ -13,6 +13,8 @@ tags: [Obsidian, Github, Tistory]
 
 ![atlas test !](../assets/images/vscodeimages/20260219_133612.png)
 
+![second test](../assets/images/vscodeimages/20260219_134021.png)
+
 > **확인 사항:** 이미지를 붙여넣었을 때 `![[image.png]]`가 아니라 `https://raw.githubusercontent.com/...` 링크가 생성되어야 합니다.
 
 ## 3. 결과 체크리스트
