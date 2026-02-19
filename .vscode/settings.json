@@ -31,5 +31,5 @@
   "pasteImage.path": "${projectRoot}/assets/images/vscodeimages",
   "pasteImage.basePath": "${projectRoot}",
   "pasteImage.defaultName": "YMMDD_HHmmss",
-  "pasteImage.insertPattern": "![](../assets/images/${imageFileName})"
+  "pasteImage.insertPattern": "![](../assets/images/vscodeimages/${imageFileName})"
 }
