@@ -28,8 +28,8 @@
     "zsh": { "path": "/bin/zsh", "args": ["-l", "-i"] }
   }
   // --- 여기 아래 내용을 추가했습니다 ---
-  "markdown.copyFiles.destination": {
-    "**/*": "../assets/images/"
-  },
-  "markdown.copyFiles.overwriteBehavior": "overwrite"
+  "pasteImage.path": "${projectRoot}/assets/images/vscodeimages",
+  "pasteImage.basePath": "${projectRoot}",
+  "pasteImage.defaultName": "YMMDD_HHmmss",
+  "pasteImage.insertPattern": "![](../assets/images/${imageFileName})"
 }
