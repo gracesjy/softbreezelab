@@ -30,6 +30,8 @@
   // --- 여기 아래 내용을 추가했습니다 ---
   "pasteImage.path": "${projectRoot}/assets/images/vscodeimages",
   "pasteImage.basePath": "${projectRoot}",
-  "pasteImage.defaultName": "YMMDD_HHmmss",
+  "pasteImage.defaultName": "Y-MM-DD-HHmmss",
+  "pasteImage.namePrefix": "img_",
+  "pasteImage.showInputBox": true,
   "pasteImage.insertPattern": "![](../assets/images/vscodeimages/${imageFileName})"
 }
