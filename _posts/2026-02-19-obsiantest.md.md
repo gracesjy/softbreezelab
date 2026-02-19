@@ -10,7 +10,7 @@ tags: [Obsidian, Github, Tistory]
 
 ## 2. 이미지 테스트
 아래에 이미지를 붙여넣어 보세요. (캡처 후 Ctrl+V)
-![atlas](image.png)
+![alt text](image-1.png)
 
 > **확인 사항:** 이미지를 붙여넣었을 때 `![[image.png]]`가 아니라 `https://raw.githubusercontent.com/...` 링크가 생성되어야 합니다.
 
