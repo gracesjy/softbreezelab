@@ -12,7 +12,9 @@ There are many excellent autonomous robot kits on the market costing well over $
 
 * **Cost Efficiency**: Achieving core functionalities at 1/5 the price of commercial kits.
 * **Customization**: Optimizing sensor placement and firmware to suit my specific needs.
-* **Sense of Achievement**: The thrill of seeing a robot move using the very screws I sourced from local hardware alleys in freezing -10°C weather.
+* **Sense of Achievement**: When I go through the effort of gathering acrylic, 3D printer parts, and various components to assemble them, and the result looks better than I expected, I feel a sense of accomplishment. That feeling grows even more when I see it trying to perform autonomous driving functions, even if not perfectly.
+
+This is the image of a stunning autonomous vehicle I found on the internet, and it serves as the role model I aspire to.  Of course, I don’t think I’ll be able to make it exactly the same, but I believe that’s perfectly fine. What truly matters to me is the process of creating it.
 
 ![Commercial robot platform for benchmarking](../assets/images/vscodeimages/img_2026-02-19-182127.png)
 ---
@@ -53,4 +55,4 @@ If the hardware is the body, the software is the intelligence.
 
 ## Closing Thoughts
 
-This journey—understanding communication protocols, porting drivers, and building an intelligent system from scratch—is the true essence of DIY robotics. In the next post, I'll share the "Battle of the Screws" episode from the freezing streets of the local tool district and the beginning of the actual assembly.
+I often think back to my college days in the lab. Back then, I had to wander through offline parts markets, and there were many times I gave up after trying to build everything on my own. That was because software, hardware, and mechanics all had to come together. How about now? Thanks to AI and the growth of online shopping, I feel that it has become much easier to find and create everything. Yet, what truly matters is our own determination, planning, and design. Even if it’s something small, trying it out—that, I believe, is the most important thing.
