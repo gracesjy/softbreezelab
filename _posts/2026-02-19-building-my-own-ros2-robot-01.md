@@ -21,7 +21,7 @@ This is the image of a stunning autonomous vehicle I found on the internet, and 
 
 ## 2. Choosing the Brain: ESP32 and micro-ROS
 
-For the robot's "heart," I chose an **ESP32 custom board**. Based on my 30 years in IT, the choice of ESP32 over STM32 was clear:
+This time, instead of using an STM32 board, I chose an ESP32 autonomous driving board. The reason is ROS2, since the ESP32 supports microROS:
 
 * **Official micro-ROS Support**: It offers seamless integration with micro-ROS, unlike the more complex setup required for STM32.
 * **Connectivity**: Built-in Wi-Fi and Bluetooth allow for effortless wireless data exchange with my VMware host.
