@@ -6,7 +6,7 @@ categories: [Robotics, ROS2]
 tags: [ROS2, ESP32, micro-ROS, DIY]
 ---
 # SLAM Robot Project: From Firmware to Navigation
-
+![SLAM](../assets/images/vscodeimages/img_2026-02-23-184810.png)
 ## 1. Uploading Firmware to ESP32
 Before running ROS 2 nodes, ensure the micro-ROS firmware is running on your robot's controller.
 Open the micro-ROS project in your IDE (e.g., Arduino IDE or PlatformIO).
