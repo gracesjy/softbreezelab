@@ -13,7 +13,18 @@ Before running ROS 2 nodes, ensure the micro-ROS firmware is running on your rob
 Open the micro-ROS project in your IDE (e.g., Arduino IDE or PlatformIO).
 Configure your WiFi SSID/Password and the PC IP Address (Agent IP).
 Set the Agent Port to 8090.
+![idf.py menuconfig](../assets/images/vscodeimages/img_2026-02-23-191725.png)
+```bash
+$ source ~/esp/esp-idf/export.sh
+$ idf.py set-target esp32s3
+$ idf.py menuconfig
+```
 Flash the code to the ESP32 board.
+
+```bash
+$ idf.py flash monitor
+$ idf.py -p /dev/ttyUSB0 flash monitor  # port
+```
 
 ## 2. Start micro-ROS Agent
 The agent acts as a bridge between the robot (ESP32) and the ROS 2 environment.
