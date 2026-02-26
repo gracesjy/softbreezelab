@@ -123,6 +123,10 @@ if __name__ == "__main__":
 - Del : Delete the selected bounding box
 - Ctrl + + / - : Zoom in / Zoom out on the image
 
+
+https://github.com/HumanSignal/labelImg/releases for download binary version 1.8.1
+
+
 ## YOLO
 These can be adjusted in the training configuration file (hyp.yaml) or as arguments in model.train().
 - Mosaic (0.0–1.0): Combines 4 random images into one. Very effective for improving detection performance, especially for small objects. (Default usually 1.0)
