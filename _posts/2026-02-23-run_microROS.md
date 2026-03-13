@@ -5,7 +5,8 @@ date: 2026-02-19 18:00:00 +0900
 categories: [Robotics, ROS2]
 tags: [ROS2, ESP32, micro-ROS, DIY]
 ---
-# SLAM Robot Project: From Firmware to Navigation
+## 
+
 ![SLAM and Navigation](../assets/images/vscodeimages/img_2026-02-23-190820.png)
 
 ## 1. Uploading Firmware to ESP32
