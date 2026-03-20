@@ -79,13 +79,28 @@ Stop the SLAM and Teleop nodes (Ctrl+C).
 
 Run Navigation:
 
-Terminal 6
+Terminal 6, for simple navigation.
+
 ```bash
-cd ~/yahboomcar_ws
-source install/setup.bash
 export ROS_DOMAIN_ID=15
-ros2 launch yahboomcar_nav navigation_dwb_launch.py map:=/home/yahboom/my_new_map.yaml
+ros2 launch nav2_bringup bringup_launch.py map:=/home/go/my_maps/my_2nd_map.yaml
 ```
+You may edit your own navigation params.
+```bash
+mkdir -p ~/navi
+cp $(ros2 pkg prefix nav2_bringup)/share/nav2_bringup/params/nav2_params.yaml ~/navi/my_nav2_params.yaml
+vi ~/navi/my_nav2_params.yaml # for detail
+
+# for navigation
+ros2 launch nav2_bringup bringup_launch.py use_sim_time:=False params_file:=/home/go/navi/my_nav2_params.yaml map:=/home/go/my_maps/my_2nd_map.yaml
+
+```
+
+
+```bash
+ros2 run rviz2 rviz2 -d $(ros2 pkg prefix nav2_bringup)/share/nav2_bringup/rviz/nav2_default_view.rviz
+```
+
 In RViz2:
 
 Use 2D Pose Estimate to align the robot's current position on the map.
