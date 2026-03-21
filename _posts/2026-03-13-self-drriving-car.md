@@ -1,5 +1,5 @@
 ---
-title: "Building an Autonomous Car from Scratch"
+title: "ROS 2 Autonomous Robot DIY Project #2:"
 author: "Raymond"
 date: 2026-03-13 22:00:00 +0900
 categories: [Robotics, ROS2]
@@ -13,6 +13,46 @@ Ultimately, the architecture transitioned to **ROS2 Humble**, with ESP32 handlin
 
 ![Overview](../assets/images/vscodeimages/img_2026-03-13-220801.png)
 ---
+
+## Architecture
+### Architecture Overview
+This diagram illustrates a high-level micro-ROS and ROS2 hybrid architecture for an autonomous vehicle. The system is designed to split workloads between a low-level microcontroller for hardware interfacing and a high-level computing unit for complex processing.
+
+![Architecture](../assets/images/vscodeimages/img_2026-03-21-093949.png)
+
+### 1. Vehicle Platform (ESP32 MCU)
+The left side of the diagram represents the real-time hardware interface. The ESP32 acts as the bridge between the physical sensors/actuators and the main software stack.
+
+micro-ROS Stack: It runs lightweight micro-ROS Nodes and a Client Library (rclc/rmw) specifically optimized for resource-constrained hardware.
+
+Driver Nodes: These manage low-level communication protocols such as CAN, PWM, and UART.
+
+Hardware I/O: It directly interfaces with various sensors (LiDAR, Camera, IMU, Odometry) and controls physical Drive and Steering Actuators.
+
+### 2. Laptop Computing Unit (Standard ROS2)
+The right side represents the central intelligence, typically running on a powerful laptop (e.g., Lenovo ThinkPad) using a full ROS2 installation.
+
+ROS2 Agent (micro-ROS Agent): This is the critical middleware component that allows the micro-ROS nodes on the ESP32 to communicate seamlessly with the rest of the ROS2 ecosystem.
+
+ROS2 Core & High-Level Nodes: This unit handles high-compute tasks that an MCU cannot perform:
+
+Perception: Processing data from LiDAR and Cameras.
+
+Localization: Determining position using AMCL or Slam_toolbox.
+
+Path Planning: Navigating the environment using the Nav2 stack.
+
+Control: Sending movement commands (Command Velocity).
+
+Visualization: Monitoring the system state in real-time via Rviz2.
+
+### 3. Communication Link
+The two systems are bridged via a Physical Communication Link, ensuring data flow between the vehicle hardware and the computing unit.
+
+Protocols: Data is exchanged using SERIAL, TCP, or UDP.
+
+Physical Media: This can be established over USB/Serial, Wi-Fi, or Bluetooth, depending on whether the setup is tethered or wireless.
+
 
 ## Hardware
 
