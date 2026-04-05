@@ -40,10 +40,10 @@ A **Pipelined Table Function** is an Oracle structure that is a function but ret
 
 ---
 
-### 2. 왜 사용하는가 (핵심 가치)
-Why Use It (Core Value)
+### 2. Why Use It (Core Value)
+
 **Standard PL/SQL:**
-- Loads everything into memory → Returns all at once.
+- Loads everything into memory → Returns all at once. not fit for Bakend Server.
 - Result: Slow performance and high memory consumption.
 
 **Pipelined:**
@@ -95,15 +95,15 @@ FROM TABLE (apGroupEvalParallel (
      cursor ( 
         SELECT * 
         FROM TRACE_DATA
-        WHERE EQP_ID = ‘EPS001’
-          AND LOT_ID = ‘LOT001’
-          AND ETC = ‘…..’
+        WHERE EQP_ID = 'EPS001'
+          AND LOT_ID = 'LOT001'
+          AND ETC = '...'
         ), 
      cursor(SELECT * FROM GOLDEN_EQUIPMENT ...),
-     ‘SELECT  CAST(‘’A’’ AS VARCHAR2(40)) PARAMETER_ID,  
-              1.0 SIMILARITY FROM DUAL’,
-      ‘EQP_ID, LOT_ID, ....’,
-      ‘DefectUtil:FastDTW’);
+     'SELECT  CAST(''A'' AS VARCHAR2(40)) PARAMETER_ID,  
+              1.0 SIMILARITY FROM DUAL',
+      'EQP_ID, LOT_ID, ....',
+      'DefectUtil:FastDTW');
 
 ```
 The results are displayed as follows:
