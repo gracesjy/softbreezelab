@@ -1,7 +1,7 @@
 ---
 title: "Solving ROS2 Discovery Issues in VMware Bridge Environments"
 date: 2026-02-26 09:30:00 +0900
-categories: [Tips]
+categories: [Robotics, ROS2]
 tags: [ros2, network]
 author: Raymond
 ---
