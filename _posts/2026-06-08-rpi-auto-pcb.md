@@ -34,13 +34,18 @@ For the 1.44" TFT LCD (SPI), I accommodated the two most common pin configuratio
 
 ## Manufacturing and Assembly with JLCPCB
 
-About 10 days later, the package arrived from JLCPCB.
+Approximately ten days after placing the order, the PCB arrived from JLCPCB.
 
 ![JLCPCB_delivery](../assets/images/vscodeimages/img_2026-06-09-094417.png)
 
-Here is the board after soldering all the header pins.
+Once the PCBs arrived, I gathered all of the required components separately and prepared everything for assembly, as shown in the image below.
+
+The photo shows the complete set of parts for the Raspberry Pi HAT project, including header pins, PH2.0 connectors, mounting hardware, and cables. At this stage, nothing had been soldered yet—it was the final preparation step before assembly began.
 
 ![Finished_Work](../assets/images/vscodeimages/img_2026-06-09-094445.png)
+
+After soldering the connectors and headers, the board was ready for integration with the Raspberry Pi and the rest of the robotics platform.
+
 
 ## Testing with ROS2 Humble and AI
 
@@ -52,11 +57,32 @@ The connections to the Lidar were standardized using PH2.0 connectors, which I c
 
 ## Power Management Considerations for Servos
 
-I included two servo connections for things like camera gimbals, but I intentionally left the VCC (power) trace disconnected from the main circuit. I highly recommend using an external power supply for servos. The Raspberry Pi requires around 5V/4A, and in my experience, the sudden current spikes from servo motors can severely affect the Pi if the circuit isn't heavily filtered with capacitors. Including the INA219 voltage/current sensor allows me to monitor these power dynamics closely.
+The board includes two servo connectors for applications such as camera gimbals, pan-tilt mechanisms, or various sensor experiments.
 
-## Display Installation and Future Updates
+For small hobby servos like the SG90, the onboard connectors are perfectly adequate for testing and experimentation. However, I highly recommend installing the optional INA219 module and keeping an eye on the current consumption in real time—especially during startup or sudden direction changes, where current spikes can be surprisingly large.
 
-I soldered the 1.44" TFT LCD header pins vertically, meaning it should ideally sit flat in the center. However, I ended up connecting it to the lower part of the chassis via a cable for now. Once the chassis build is fully complete, I’ll update this post with new images.
+For anything larger than an SG90-class servo, an external power supply should be considered mandatory rather than optional. Drawing high servo currents directly from the Raspberry Pi power rail is simply asking for instability sooner or later.
+
+One advantage of including the INA219 footprint on the board is that it enables not only hardware monitoring but also software protection strategies. For example, if the measured current exceeds a predefined threshold, the software can automatically stop the servo or disable certain functions before something resets or overheats.
+
+That may sound slightly over-engineered for a hobby project, but that's exactly the kind of experimentation that makes DIY robotics fun. Watching current consumption in real time and teaching the robot how to protect itself is just as interesting as making the motors move in the first place.
+
+## Display Installation
+
+Since the Raspberry Pi HAT itself is roughly the same size as the Raspberry Pi board, mounting a large LCD directly onto the HAT was never a realistic option.
+
+Instead, I designed the board to support two compact and popular display options commonly used in robotics projects: the 1.44" TFT LCD and the 1.69" IPS LCD.
+
+The display headers were designed so that the LCD module can be plugged directly into the board using vertical header pins without requiring any additional cables or adapters. To maximize compatibility, the PCB supports the two most common 8-pin SPI pin layouts found on commercially available LCD modules, allowing users to select whichever version they happen to have.
+
+![Display Design](../assets/images/vscodeimages/img_2026-07-14-093105.png)
+
+The final setup can be seen below using the 1.69" IPS LCD module.
+
+Rather than fixing the display permanently to the PCB, I chose to support it horizontally above the board using a small 3D-printed bracket. This approach keeps the display easy to replace while maintaining a clean overall appearance for the robot platform.
+
+![Display Update ](../assets/images/vscodeimages/img_2026-07-14-092841.png)
+
 
 ## The Philosophy of DIY Prototyping vs. Ready-Made Kits
 
