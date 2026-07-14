@@ -30,15 +30,18 @@ While the focus was on autonomous driving, I designed this HAT to fully utilize 
 * **Dual Servo Connections**
 * **8-pin SPI Port:** For directly plugging in a 1.44" TFT LCD
 
-For the 1.44" TFT LCD (SPI), I accommodated the two most common pin configurations used by different manufacturers. I also exposed extra I2C ports, an I2C port for the motor board, a serial port for the Lidar sensor, and an additional spare serial/Bluetooth port.
+For the 1.44" TFT LCD (SPI), I accommodated the two most common pin configurations used by different manufacturers. The board was also designed to support the increasingly popular 1.69" IPS LCD modules using the same SPI interface.
+
+While both displays work perfectly fine for robotics projects, the 1.69" IPS LCD quickly became my personal favorite thanks to its higher resolution and significantly better image quality. Once you try it, it is surprisingly difficult to go back to the smaller 1.44" display.
+
+I also exposed extra I2C ports, an I2C port for the motor board, a serial port for the Lidar sensor, and an additional spare serial/Bluetooth port.
 
 ## Manufacturing and Assembly with JLCPCB
 
-Approximately ten days after placing the order, the PCB arrived from JLCPCB.
+Approximately ten days after placing the order, the PCB arrived from JLCPCB. Once the PCBs arrived, I gathered all of the required components separately and prepared everything for assembly, as shown in the image below.
 
 ![JLCPCB_delivery](../assets/images/vscodeimages/img_2026-06-09-094417.png)
 
-Once the PCBs arrived, I gathered all of the required components separately and prepared everything for assembly, as shown in the image below.
 
 The photo shows the complete set of parts for the Raspberry Pi HAT project, including header pins, PH2.0 connectors, mounting hardware, and cables. At this stage, nothing had been soldered yet—it was the final preparation step before assembly began.
 
