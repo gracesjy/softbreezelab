@@ -44,7 +44,7 @@ go@ubuntu2404:~/esp/projects/atlas_new_esp/components/Adafruit-GFX-Library$ tree
 │   ├── FreeMono12pt7b.h
 │   ├── FreeMono18pt7b.h
 │   ├── FreeMono24pt7b.h
-...<중략>...
+...<omission>...
 ```
 
 
@@ -77,10 +77,10 @@ After declaring the font, simply load it with tft.setFont(..). It’s straightfo
 void display()
 {
 
-   ...<중략>...
+   ...<omission>...
    tft.setFont(&DejaVuSans6pt7b);
    tft.setTextSize(1);
-   ...<중략>...
+   ...<omission>...
 }
 ```
 
