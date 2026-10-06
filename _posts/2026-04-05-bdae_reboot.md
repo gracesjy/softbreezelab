@@ -2,7 +2,7 @@
 title: Utilization of Big Data Analysis Enabler
 author: Raymond
 date: 2026-04-05
-category: My Solutions
+category: [Smart Factory, AI]
 tags:
  - Oracle Database
  - Python
